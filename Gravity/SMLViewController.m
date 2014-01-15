@@ -20,7 +20,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+//	UIView *item = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//	[self.view addSubview:item];
+//	UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+//	UIGravityBehavior *behavior = [[UIGravityBehavior alloc] initWithItems:@[item]];
+//	[animator addBehavior:behavior];
+//
+//	double delayInSeconds = 2.0;
+//	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//	dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//		behavior.angle = 4.0f;
+//	});
 	
 	[self addAndRemove];
 
