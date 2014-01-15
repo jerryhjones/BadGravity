@@ -29,10 +29,10 @@
 		UIGravityBehavior *behavior = [[UIGravityBehavior alloc] initWithItems:@[item]];
 		[animator addBehavior:behavior];
 
-		double delayInSeconds = 2.0;
+		double delayInSeconds = 0.4;
 		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
 		dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-			behavior.angle = 4.0f;
+			NSTimeInterval time = behavior.dynamicAnimator.elapsedTime;
 		});
 	}
 	
